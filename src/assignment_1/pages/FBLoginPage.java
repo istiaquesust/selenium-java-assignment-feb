@@ -40,8 +40,8 @@ public class FBLoginPage {
 	
 	public void clickSigninButton()
 	{
-		By pasword_locator = By.xpath("//button[text()='Log In']");
-		driver.findElement(pasword_locator).click();
+		By login_button_locator = By.xpath("//button[text()='Log In']");
+		driver.findElement(login_button_locator).click();
 	}
 	
 }
