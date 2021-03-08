@@ -72,7 +72,7 @@ public class DriverSetup
         pro.load(fis);
 
         // launch site
-        String driverPath = pro.getProperty("DRIVER_FIREFOX_PATH");
+        String driverPath = pro.getProperty("DRIVER_PATH");
         System.setProperty("webdriver.gecko.driver", driverPath);
         WebDriver driver = new FirefoxDriver();
         driver.manage().window().maximize();
