@@ -48,7 +48,7 @@ public class WHCompanyPage {
 		String companyNameXPath = "//h1[text()=" + "\'" + companyName + "\']";
 		By verify_company_page_locator = By.xpath(companyNameXPath);
 		wait.until(ExpectedConditions.presenceOfElementLocated(verify_company_page_locator));
-        System.out.println("Landed on company page");
+        	System.out.println("Landed on company page");
 	}
 	
 	public void getRatingOption() 
@@ -71,9 +71,9 @@ public class WHCompanyPage {
 		wait.until(ExpectedConditions.visibilityOf(we));
 		
 		//select review type
-        driver.findElement(By.xpath("//span[text()='Select...']")).click();	
-        String reviewType = pro.getProperty("REVIEW_TYPE");
-        String reviewTypeXPath = "//li[text()=" + "\'" + reviewType + "\']";
+        	driver.findElement(By.xpath("//span[text()='Select...']")).click();	
+       		String reviewType = pro.getProperty("REVIEW_TYPE");
+        	String reviewTypeXPath = "//li[text()=" + "\'" + reviewType + "\']";
 		driver.findElement(By.xpath(reviewTypeXPath)).click();	
 	}
 
