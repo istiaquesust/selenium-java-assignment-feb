@@ -23,9 +23,6 @@ public class WHCompanyPage {
   	File src = new File("./properties/config.properties");
   	FileInputStream fis = new FileInputStream(src);
   	Properties pro = new Properties();
-  	
-  	
-
 	
 	public WHCompanyPage(WebDriver driver) throws IOException
 	{
